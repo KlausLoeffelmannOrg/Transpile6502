@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+  <Import Project="../NuGet.props" />
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <NoWarn>$(NoWarn);NU5131</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet6502.BuildTasks\DotNet6502.BuildTasks.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../LICENSE" Pack="true" PackagePath="" />
+    <None Include="../DotNet6502.BuildTasks/bin/$(Configuration)/netstandard2.0/DotNet6502.BuildTasks.dll" Pack="true" PackagePath="build" />
+    <None Include="../DotNet6502.BuildTasks/bin/$(Configuration)/netstandard2.0/DotNet6502.BuildTasks.pdb" Pack="true" PackagePath="build" />
+    <None Include="../DotNet6502.BuildTasks/bin/$(Configuration)/netstandard2.0/DotNet6502.props" Pack="true" PackagePath="build" />
+    <None Include="../DotNet6502.BuildTasks/bin/$(Configuration)/netstandard2.0/DotNet6502.targets" Pack="true" PackagePath="build" />
+    <None Include="../DotNet6502.BuildTasks/bin/$(Configuration)/netstandard2.0/System.Reflection.Metadata.dll" Pack="true" PackagePath="build" />
+    <None Include="../DotNet6502.BuildTasks/bin/$(Configuration)/netstandard2.0/System.Collections.Immutable.dll" Pack="true" PackagePath="build" />
+  </ItemGroup>
+</Project>
