@@ -20,16 +20,19 @@ public class TranspilerTests
         var dll = Utilities.GetResource($"{name}.{suffix}.dll");
         var transpiler = new Transpiler(dll, Array.Empty<AssemblyReader>());
         var builder = new StringBuilder();
+
         foreach (var instruction in transpiler.ReadStaticVoidMain())
         {
             if (builder.Length > 0)
                 builder.AppendLine();
+
             builder.Append(instruction.ToString());
         }
 
         var settings = new VerifySettings();
         settings.DisableRequireUniquePrefix();
         settings.UseFileName($"TranspilerTests.ReadStaticVoidMain.{name}");
+
         return Verify(builder, settings);
     }
 
@@ -57,6 +60,7 @@ public class TranspilerTests
         var settings = new VerifySettings();
         settings.DisableRequireUniquePrefix();
         settings.UseFileName($"TranspilerTests.Write.{name}");
+
         return Verify(ms.ToArray(), settings);
     }
 }

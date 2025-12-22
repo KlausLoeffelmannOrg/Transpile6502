@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet6502", "src\DotNet650
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet6502.Tests", "src\DotNet6502.Tests\DotNet6502.Tests.csproj", "{3BFA2292-85CA-4D22-B0C2-F9A7F497DC84}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnes.anese", "src\dotnes.anese\dotnes.anese.csproj", "{2BF1755D-7DD9-43D2-8F94-BD7496F64BD2}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet6502.Templates", "src\DotNet6502.Templates\DotNet6502.Templates.csproj", "{56F0AE62-836B-4767-8267-AA2352DD539F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{517CC69D-CD5D-4753-A23D-7B26861D044E}"
@@ -19,6 +17,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet6502.Compiler", "src\DotNet6502.Compiler\DotNet6502.Compiler.csproj", "{2AD5123D-199E-4F54-A5D9-D7E4430D84B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet6502.BuildTasks", "src\DotNet6502.BuildTasks\DotNet6502.BuildTasks.csproj", "{CC835A9E-61E3-7642-8400-A6305B7BED83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetC64.Vice", "src\DotNet6502.Vice\DotNetC64.Vice.csproj", "{C0BD212E-EEBB-EFE6-5BB0-DCE03D645461}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +34,6 @@ Global
 		{3BFA2292-85CA-4D22-B0C2-F9A7F497DC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BFA2292-85CA-4D22-B0C2-F9A7F497DC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BFA2292-85CA-4D22-B0C2-F9A7F497DC84}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2BF1755D-7DD9-43D2-8F94-BD7496F64BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BF1755D-7DD9-43D2-8F94-BD7496F64BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BF1755D-7DD9-43D2-8F94-BD7496F64BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BF1755D-7DD9-43D2-8F94-BD7496F64BD2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{56F0AE62-836B-4767-8267-AA2352DD539F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{56F0AE62-836B-4767-8267-AA2352DD539F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56F0AE62-836B-4767-8267-AA2352DD539F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -50,6 +46,10 @@ Global
 		{CC835A9E-61E3-7642-8400-A6305B7BED83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC835A9E-61E3-7642-8400-A6305B7BED83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC835A9E-61E3-7642-8400-A6305B7BED83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BD212E-EEBB-EFE6-5BB0-DCE03D645461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BD212E-EEBB-EFE6-5BB0-DCE03D645461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BD212E-EEBB-EFE6-5BB0-DCE03D645461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BD212E-EEBB-EFE6-5BB0-DCE03D645461}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Klaus Loeffelmann",
+    "classifications": [ "M6502" ],
+    "identity": "DotNet6502.Templates",
+    "name": "6502 C64 Assembly",
+    "description": "C# Project targeting Commodore 64/6502 assembly (*=$0800)",
+    "shortName": "DotNet6502-CSharp-C64",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "HelloWorld_C64",
+    "sources": [
+        {
+            "source": "./",
+            "target": "./",
+            "copyOnly": [ "*.s", "*.cs" ]
+        }
+    ],
+    "preferNameDirectory": true,
+    "primaryOutputs": [
+        { "path": "HelloWorld_C64.csproj" }
+    ],
+    "defaultName": "HelloWorld_C64"
+}
