@@ -1,19 +1,19 @@
 <Project>
-  <UsingTask TaskName="dotnes.TranspileToNES" AssemblyFile="dotnes.tasks.dll" />
+  <UsingTask TaskName="DotNet6502.TranspileTo6502" AssemblyFile="DotNet6502.BuildTasks.dll" />
   <PropertyGroup>
-    <NESTargetPath>$(OutputPath)$(TargetName).nes</NESTargetPath>
+    <M6502TargetPath>$(OutputPath)$(TargetName).prg</M6502TargetPath>
     <IncrementalCleanDependsOn>$(IncrementalCleanDependsOn);Transpile</IncrementalCleanDependsOn>
   </PropertyGroup>
   <Target Name="Transpile" AfterTargets="Build"
-      Inputs="$(TargetPath);@(NESAssembly)" Outputs="$(NESTargetPath)">
+      Inputs="$(TargetPath);@(NESAssembly)" Outputs="$(M6502TargetPath)">
     <TranspileToNES
         TargetPath="$(TargetPath)"
-        AssemblyFiles="@(NESAssembly)"
-        OutputPath="$(NESTargetPath)"
-        DiagnosticLogging="$(NESDiagnosticLogging)"
+        AssemblyFiles="@(M6502Assembly)"
+        OutputPath="$(M6502TargetPath)"
+        DiagnosticLogging="$(M6502DiagnosticLogging)"
     />
     <ItemGroup>
-      <FileWrites Include="$(NESTargetPath)" />
+      <FileWrites Include="$(M6502TargetPath)" />
     </ItemGroup>
   </Target>
 </Project>

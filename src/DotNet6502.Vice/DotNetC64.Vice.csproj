@@ -18,9 +18,15 @@
     </BeforePack>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="D:\git\Transpile6502\src\../assets/Transparent/dotnes.png" />
+    <None Include="..\..\assets\LICENSE" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="..\..\assets\LICENSE">
+      <Pack>True</Pack>
+    </None>
+    <None Update="..\..\assets\LICENSE">
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="@(None)" Pack="true" PackagePath="" />
     <_Downloads Include="$(IntermediateOutputPath)GTK3VICE-$(PackageVersion)-win64.zip" />
   </ItemGroup>

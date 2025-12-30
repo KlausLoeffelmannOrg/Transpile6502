@@ -12,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{517CC69D-CD5D-4753-A23D-7B26861D044E}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet6502.Compiler", "src\DotNet6502.Compiler\DotNet6502.Compiler.csproj", "{2AD5123D-199E-4F54-A5D9-D7E4430D84B5}"
@@ -19,6 +21,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet6502.BuildTasks", "src\DotNet6502.BuildTasks\DotNet6502.BuildTasks.csproj", "{CC835A9E-61E3-7642-8400-A6305B7BED83}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetC64.Vice", "src\DotNet6502.Vice\DotNetC64.Vice.csproj", "{C0BD212E-EEBB-EFE6-5BB0-DCE03D645461}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{18E1116A-B4B7-4EE5-B929-2086B1F979E6}"
+	ProjectSection(SolutionItems) = preProject
+		assets\LICENSE = assets\LICENSE
+		assets\README.md = assets\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pics", "pics", "{9C144AE8-69BF-46A5-AC38-3A4ABB4E0DF6}"
+	ProjectSection(SolutionItems) = preProject
+		assets\pics\vs-template.png = assets\pics\vs-template.png
+		assets\pics\vscode.gif = assets\pics\vscode.gif
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +67,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18E1116A-B4B7-4EE5-B929-2086B1F979E6} = {517CC69D-CD5D-4753-A23D-7B26861D044E}
+		{9C144AE8-69BF-46A5-AC38-3A4ABB4E0DF6} = {18E1116A-B4B7-4EE5-B929-2086B1F979E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA01290E-68A6-43F3-A663-82F853D63D16}

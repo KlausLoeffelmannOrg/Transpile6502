@@ -18,7 +18,5 @@
   </PropertyGroup>
   <ItemGroup>
     <NESAssembly Include="*.s" />
-    <Using Include="NES" />
-    <Using Include="NES.NESLib" Static="true" />
   </ItemGroup>
 </Project>

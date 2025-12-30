@@ -15,7 +15,12 @@
     <ToolCommandName>DotNet6502</ToolCommandName>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="../../LICENSE" Pack="true" PackagePath="" />
     <Compile Include="../DotNet6502.BuildTasks/Utilities/*.cs" Link="Utilities/%(FileName)%(Extension)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\assets\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>

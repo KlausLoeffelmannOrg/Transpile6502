@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.Build.NoTargets">
+﻿<Project Sdk="Microsoft.Build.NoTargets">
   <Import Project="../NuGet.props" />
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -10,7 +10,7 @@
     <ProjectReference Include="..\DotNet6502.BuildTasks\DotNet6502.BuildTasks.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="../../LICENSE" Pack="true" PackagePath="" />
+    <None Include="..\..\assets\LICENSE" Pack="true" PackagePath="" />
     <None Include="../DotNet6502.BuildTasks/bin/$(Configuration)/netstandard2.0/DotNet6502.BuildTasks.dll" Pack="true" PackagePath="build" />
     <None Include="../DotNet6502.BuildTasks/bin/$(Configuration)/netstandard2.0/DotNet6502.BuildTasks.pdb" Pack="true" PackagePath="build" />
     <None Include="../DotNet6502.BuildTasks/bin/$(Configuration)/netstandard2.0/DotNet6502.props" Pack="true" PackagePath="build" />
