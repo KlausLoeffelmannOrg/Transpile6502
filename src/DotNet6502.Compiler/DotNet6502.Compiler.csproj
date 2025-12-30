@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../NuGet.props" />
+  <PropertyGroup>
+    <PackageId>DotNet6502.Compiler</PackageId>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>DotNet6502</AssemblyName>
+    <RootNamespace>DotNet6502</RootNamespace>
+    <RollForward>Major</RollForward>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>DotNet6502</ToolCommandName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../DotNet6502.BuildTasks/Utilities/*.cs" Link="Utilities/%(FileName)%(Extension)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\assets\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

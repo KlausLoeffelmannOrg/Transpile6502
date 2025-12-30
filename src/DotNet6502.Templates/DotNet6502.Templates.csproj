@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.Build.NoTargets">
+  <Import Project="../NuGet.props" />
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Description>.NET for the NES game console: 'dotnet new nes' project templates</Description>
+    <PackageType>Template</PackageType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <!-- This project has no .NET assemblies, so disable the warning for that -->
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <!-- Remove the `<group targetFramework="..." />` entry from the .nuspec. -->
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="templates/**/*" />
+    <Content Include="../../samples/hello/*.s" PackagePath="content/templates/nes" />
+    <Content Include="../../samples/hello/*.cs" PackagePath="content/templates/nes" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\assets\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

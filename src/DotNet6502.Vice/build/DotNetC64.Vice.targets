@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <RunArguments>&quot;$(TargetName).prg&quot; --no-sav</RunArguments>
+    <RunWorkingDirectory>$(OutputPath)</RunWorkingDirectory>
+  </PropertyGroup>
+</Project>
